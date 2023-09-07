@@ -18,7 +18,7 @@
         </li>
         <li><a href="/">сокращенная ссылка на внутреннюю страницу</a></li>
         <li><a href="/main">сокращенная ссылка на главную страницу</a></li>
-        <li><a href="#bottom">ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="#form">ссылка на фрагмент текущей страницы</a></li>
         <li><a href="https://kubsu.ru/?hl=ru&page=home&param3=p3">Ссылка с тремя параметрами в url</a></li>
         <li><a href="index">относительная ссылка на страницу в текущем каталоге</a></li>
         <li><a href="./about/index">относительная на страницу в каталоге about</a></li>
@@ -36,8 +36,22 @@
         </li>
         <li><a href="">Ссылка с пустым href</a></li>
         <li><a>Ссылка без href</a></li>
-        <li><a href="https://someillegalpage.com" rel="nofollow">kkk</a></li>
+        <li><a href="https://someillegalpage.com" rel="nofollow">ссылка по которой запрещен переход поисковикам</a></li>
+        <li><noindex><a href="https:/someillegalpage.com">запрещенная для индексации поисковиками</a></noindex></li>
+        <li><a href="ftp://logit:password123@page.ru/files/index.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
     </ul>
+    <ol>
+        <li><a href="https://kubsu.ru" title="kubsu.ru">Кубгу</a></li>
+        <li><a href="https://moodle.com" title="moodle.com">moodle</a></li>
+        <li><a href="https://htmlbook.ru" title="htmlbook.ru">htmlbook</a></li>
+    </ol>
+    Заполните форму:
+    <form action="https://someform.com" method="POST" id="form">
+        <label>
+            <br><input name="field-fullname" placeholder="Фамилия Имя Отчество"value=""></label></br>
+            <br><input name="field-email" placeholder="someemail@mail.ru" value="" type="email"></br>
+        </label>
+    </form>
 </body>
 
 </html>
