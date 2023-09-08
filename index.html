@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="notallowed" content="noindex">
     <title>Document</title>
 </head>
 
@@ -34,9 +35,9 @@
             ссылки из прямоугольных и круглых областей картинки (Роджер и надпись)<br>
             <img src="images/nwgen.jpg" alt="nwgen" style="width: 400px; height: 400px" usemap="#nmap">
             <map name="nmap">
-                <area shape="rect" coords="112, 277, 287, 309"
+                <area shape="rect" coords="112,277,287,309"
                     href="https://twitter.com/vxunderground/status/1514348737912619018" alt="Прямоугольник">
-                <area shape="circle" coords="202, 154, 122"
+                <area shape="circle" coords="202,154,122"
                     href="https://onepiece.fandom.com/ru/wiki/%D0%9F%D0%B8%D1%80%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%84%D0%BB%D0%B0%D0%B3%D0%B8"
                     alt="круг">
             </map>
@@ -45,7 +46,7 @@
         <li><a>Ссылка без href</a></li>
         <li><a href="https://someillegalpage.com" rel="nofollow">ссылка по которой запрещен переход поисковикам</a></li>
         <li>
-            <noindex><a href="https:/someillegalpage.com">запрещенная для индексации поисковиками</a></noindex>
+            <a id="notallowed" href="https://someillegalpage.com">запрещенная для индексации поисковиками</a>
         </li>
         <li><a href="ftp://logit:password123@page.ru/files/index.html">Ссылка на файл на сервере FTP с авторизацией</a>
         </li>
@@ -105,9 +106,3 @@
 </body>
 
 </html>
-
-<!--112 277 
-    287 309
-
-    202 154
-    122-->
