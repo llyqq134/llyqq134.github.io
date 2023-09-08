@@ -40,6 +40,7 @@
         <li><noindex><a href="https:/someillegalpage.com">запрещенная для индексации поисковиками</a></noindex></li>
         <li><a href="ftp://logit:password123@page.ru/files/index.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
     </ul>
+    <p>Нумерованный список ссылок с подписями title:</p>
     <ol>
         <li><a href="https://kubsu.ru" title="kubsu.ru">Кубгу</a></li>
         <li><a href="https://moodle.com" title="moodle.com">moodle</a></li>
@@ -47,10 +48,23 @@
     </ol>
     Заполните форму:
     <form action="https://someform.com" method="POST" id="form">
-        <label>
-            <br><input name="field-fullname" placeholder="Фамилия Имя Отчество"value=""></label></br>
-            <br><input name="field-email" placeholder="someemail@mail.ru" value="" type="email"></br>
-        </label>
+        <p><label>
+            Имя:<br>
+            <input name="field-fullname" placeholder="Фамилия Имя Отчество"value=""><br>
+        </label></p>
+    
+        <p><label>
+            Номер телефона:<br>
+            <input name="field-tel" placeholder="+1(111)-111-11-11" type="tel"><br>
+        </label></p>
+        <p><label>
+            Электронная почта:<br>
+            <input name="field-email" placeholder="someemail@mail.ru" value="" type="email"><br>
+        </label></p>
+        <p><label>
+            Дата рождения:<br>
+            <input name="field-data" type="date"><br>
+        </label></p>
     </form>
 </body>
 
